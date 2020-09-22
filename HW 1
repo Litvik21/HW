@@ -1,0 +1,68 @@
+
+//Task 1
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter radius of flower bed: ");
+        long r = in.nextLong();
+        double P = r*(3.14 * 2);
+        double S = 3.14*(r*r);
+        System.out.println("P = "+P);
+        System.out.println("S = "+S);
+        
+        in.close();
+    }
+}
+
+
+//Task 2
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Whats ur name?  - ");
+        String name = in.nextLine();
+        System.out.print("How old are u, " + name + " ?  - ");
+        int age = in.nextInt();
+        System.out.println("Im " + name + " " + age + " years old");
+        in.close();
+    }
+}
+
+//Task 3
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("c1 = ");
+        long c1 = in.nextLong();
+        System.out.print("c2 = ");
+        long c2 = in.nextLong();
+        System.out.print("c3 = ");
+        long c3 = in.nextLong();
+        System.out.print("t1 = ");
+        long t1 = in.nextLong();
+        System.out.print("t2 = ");
+        long t2 = in.nextLong();
+        System.out.print("t3 = ");
+        long t3 = in.nextLong();
+        double f1 = c1*t1;
+        double f2 = c2*t2;
+        double f3 = c3*t3;
+        System.out.println("First call: " + f1);
+        System.out.println("Second call: " + f2);
+        System.out.println("Third call: " + f3);
+        double sum = f1+f2+f3;
+        System.out.println("Sum of calls: "+ sum);
+
+        in.close();
+    }
+}
